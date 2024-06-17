@@ -1,0 +1,6 @@
+CRS: 32643 # Canada, Calgary CRS TODO: Get it from shp file.
+UHI:
+  bands:
+    brightness: [10, 11]
+    radiance: [10,11]
+    reflectance: [2, 3, 4, 5, 6, 7]

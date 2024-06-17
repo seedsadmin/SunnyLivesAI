@@ -1,0 +1,16 @@
+﻿aoi_name,lat,long,hazard_type
+mumbai,19.076,72.87,flood
+puri,19.81,85.83,flood
+chennai ,13.082,80.2707,flood
+puducherry,11.9416,79.8083,flood
+karaikal,10.9254,79.838,flood
+idukki,9.9189,77.1025,flood
+alapuzha,9.4981,76.3388,flood
+ernakulam,9.9816,76.2999,flood
+kottayam,9.5916,76.5222,flood
+thiruvananthapuram ,8.5241,76.9366,flood
+kollam ,8.8932,76.6141,flood
+"preet vihar, delhi",28.6364,77.2928,heatwave
+nagpur,21.1458,79.0882,heatwave
+dehradun,30.3165,78.0322,earthquake
+gangtok,27.3314,88.6138,earthquake

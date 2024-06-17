@@ -1,0 +1,36 @@
+REGIONS: ['delhi']
+UTM: [32644]
+REUSE: True
+RISK: 'Flood'
+STEPS:
+  CreateTiles:
+    TILESIZE: 512
+    INPUTS: ['images']
+    OUTPUT: 'tiles'
+  GenerateFootprints:
+    MODELNAME: 'efficientnet-b6'
+    CHECKPOINT: 'buildingsegmentation'
+    IMAGESIZE: 512
+    SCALE: [1, 3]
+    DENSE: False
+    INPUTS: ['tiles']
+    OUTPUT: 'footprints'
+  SimplifyFootprints:
+    INPUTS: ['footprints']
+    OUTPUT: 'simplifiedfootprints'
+  ClassifyFootprints:
+    MODELNAME: 'inceptionv3'
+    CHECKPOINT: 'rooftypeclassification'
+    IMAGESIZE: 299
+    INPUTS: ['images', 'simplifiedfootprints']
+    OUTPUT: 'rooftype'
+  RiskScoring:
+    INPUTS: ['global', 'images', 'rooftype']
+    OUTPUT: 'riskscore'
+
+
+    
+
+
+
+  
